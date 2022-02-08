@@ -1,0 +1,26 @@
+{
+  "name": "wd_prac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "onprem": "npx wdio run ./wdio.conf.js",
+    "parallel": "npx wdio run ./wdio.confparallel.js",
+    "single": "npx wdio run ./wdio.confsingle.js"
+  },
+  "keywords": [],
+  "author": "Mayank M",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^7.16.14"
+  },
+  "devDependencies": {
+    "@wdio/local-runner": "^7.16.14",
+    "@wdio/mocha-framework": "^7.16.14",
+    "@wdio/spec-reporter": "^7.16.14",
+   
+    "chromedriver": "^97.0.4",
+    "wdio-chromedriver-service": "^7.2.6",
+    "wdio-lambdatest-service": "^1.0.6"
+  }
+}
