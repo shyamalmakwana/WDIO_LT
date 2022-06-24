@@ -37,4 +37,6 @@ To run parallel test on Lambdatest
 To run On-Prem ChromeDriver
     $ npm run onprem    
 
+To run App Automation Test
+    $ npm run app 
 ```    
