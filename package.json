@@ -13,14 +13,14 @@
   "author": "Mayank M",
   "license": "ISC",
   "dependencies": {
-    "@wdio/cli": "^7.16.14"
+    "@wdio/cli": "^7.16.14",
+    "wdio-lambdatest-service": "^1.0.8"
   },
   "devDependencies": {
     "@wdio/local-runner": "^7.16.14",
     "@wdio/mocha-framework": "^7.16.14",
     "@wdio/spec-reporter": "^7.16.14",
     "chromedriver": "^97.0.4",
-    "wdio-chromedriver-service": "^7.2.6",
-    "wdio-lambdatest-service": "^1.0.8"
+    "wdio-chromedriver-service": "^7.2.6"
   }
 }
