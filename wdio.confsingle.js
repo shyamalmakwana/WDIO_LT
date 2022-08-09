@@ -1,17 +1,20 @@
 exports.config = {
     user: process.env.LT_USERNAME || 'YOUR LAMBDATEST USERNAME',
     key: process.env.LT_ACCESS_KEY || 'YOUR LAMBDATEST ACCESS KEY',
+    
   
     updateJob: false,
     specs: [
-        './test/specs/**/example.e2e.js'
+        './test/single_test.js'
     ],
     exclude: [],
     maxInstances: 10,
     capabilities: [{
         browserName: 'chrome',
         version: 'latest',
-        platform: 'WIN10'
+        platform: 'WIN10',
+        selenium_version: '4.0.0',
+        seCdp: true,
       }],
     services: [
             ['lambdatest', {
