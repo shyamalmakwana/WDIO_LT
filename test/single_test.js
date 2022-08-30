@@ -3,7 +3,13 @@ var assert = require('assert');
 describe('Lambdatest Demo Test', function() {
   it('Lambdatest Demo TestCase', async function () {
     await browser.url('https://lambdatest.github.io/sample-todo-app/')
-    await browser.throttle('offline');
+    //await browser.throttle('offline');
+     browser.throttle({
+      offline: false,
+      downloadThroughput: 200 * 1024 / 8,
+      uploadThroughput: 200 * 1024 / 8,
+      latency: 20
+  })
     const firstElement = await browser.$('*[name="li1"]');
     await firstElement.click();
     const secondElement = await browser.$('*[name="li2"]');
