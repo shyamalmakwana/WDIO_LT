@@ -4,29 +4,34 @@ exports.config = {
   
     updateJob: false,
     specs: [
-        './test/specs/**/*.js'
+        './test/single_test.js'
     ],
     exclude: [],
     maxInstances: 10,
     capabilities: [{
         browserName: 'chrome',
         version: 'latest',
-        platform: 'WIN10'
+        platform: 'WIN10',
+        enableNetworkThrottling: true,
       },{
-        deviceName: 'Galaxy Note 10',
-        platformVersion: '10',
-        platformName: 'Android',
-      },{
-        deviceName: 'iPhone 13 Pro',
-        platformVersion: '15.0',
-        platformName: 'iOS',
+        browserName: 'Firefox',
+        version: 'latest',
+        platform: 'WIN10',
+        enableNetworkThrottling: true,
       },{
         browser: 'safari',
         version: 'latest',
         platform: 'MacOS Monterey',
+        enableNetworkThrottling: true,
       
-      
-    }],
+    },{
+      browser: 'Edge',
+      version: 'latest',
+      platform: 'MacOS Monterey',
+      enableNetworkThrottling: true,
+    
+  }
+  ],
     services: [
             ['lambdatest', {
                 tunnel: false
