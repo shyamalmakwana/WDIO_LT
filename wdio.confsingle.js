@@ -10,11 +10,11 @@ exports.config = {
     exclude: [],
     maxInstances: 10,
     capabilities: [{
-        browserName: 'chrome',
+        browserName: 'Edge',
         version: 'latest',
         platform: 'WIN10',
-        selenium_version: '4.0.0',
-        seCdp: true,
+        enableNetworkThrottling: true,
+       
       }],
     services: [
             ['lambdatest', {
