@@ -2,9 +2,11 @@ var assert = require('assert');
 
 describe('Search Wikipedia Functionality', () => {
   it('can find search results', async () => {
-    var searchSelector = await $(`~Search Wikipediaaaaaaaaaaaa`);
-    await searchSelector.waitForDisplayed({ timeout: 30000 });
-    await searchSelector.click();
+    var searchSelector = await $(`~Search Wikipedia`);
+   // await searchSelector.waitForDisplayed({ timeout: 30000 });
+   await (await searchSelector).waitForDisplayed();
+   await (await searchSelector).click();
+    //await searchSelector.click();
 
     var insertTextSelector = await $('android=new UiSelector().resourceId("org.wikipedia.alpha:id/search_src_text")');
     await insertTextSelector.waitForDisplayed({ timeout: 30000 });

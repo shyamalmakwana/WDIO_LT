@@ -11,7 +11,7 @@ describe('Lambdatest Demo Test', function() {
   //     latency: 20
   // })
   await browser.execute('lambda-throttle-network','Regular 4G');
-   
+    
     const firstElement = await browser.$('*[name="li1"]');
     await firstElement.click();
     const secondElement = await browser.$('*[name="li2"]');
