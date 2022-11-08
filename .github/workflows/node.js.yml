@@ -26,5 +26,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      env: 
+        LT_USERNAME: mayankmaurya
+        LT_ACCESS_KEY: ckuVbfkUMoZWgDfOIMyiu14HtqExVpUVbg4YzFZl74QbK1rsr7 
+      
     - run: npm install
     - run: npm run single
