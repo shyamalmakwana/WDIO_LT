@@ -16,6 +16,7 @@ jobs:
     env: 
         LT_USERNAME: mayankmaurya
         LT_ACCESS_KEY: ckuVbfkUMoZWgDfOIMyiu14HtqExVpUVbg4YzFZl74QbK1rsr7 
+        BuildName: LT_GHA_Build
 
     strategy:
       matrix:
