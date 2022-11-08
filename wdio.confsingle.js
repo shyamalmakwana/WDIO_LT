@@ -1,6 +1,7 @@
 exports.config = {
     user: process.env.LT_USERNAME || 'YOUR LAMBDATEST USERNAME',
     key: process.env.LT_ACCESS_KEY || 'YOUR LAMBDATEST ACCESS KEY',
+    BUILD_NAME: process.env.BuildName
     
   
     updateJob: false,
