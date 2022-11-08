@@ -29,6 +29,8 @@ jobs:
       env: 
         LT_USERNAME: mayankmaurya
         LT_ACCESS_KEY: ckuVbfkUMoZWgDfOIMyiu14HtqExVpUVbg4YzFZl74QbK1rsr7 
-      
+    - run: |
+        echo "username is ${{env.LT_USERNAME}}  
+        echo "kEY is ${{env.LT_ACCESS_KEY}}  
     - run: npm install
     - run: npm run single
