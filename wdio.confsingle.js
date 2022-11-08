@@ -15,6 +15,7 @@ exports.config = {
         version: 'latest',
         platform: 'WIN10',
         enableNetworkThrottling: true,
+        build: BUILD_NAME
        
       }],
     services: [
