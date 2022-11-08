@@ -37,6 +37,6 @@ exports.config = {
         ui: 'bdd'
     }
   
-  
+}
   
   }
