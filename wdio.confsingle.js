@@ -1,7 +1,6 @@
 exports.config = {
     user: process.env.LT_USERNAME || 'YOUR LAMBDATEST USERNAME',
     key: process.env.LT_ACCESS_KEY || 'YOUR LAMBDATEST ACCESS KEY',
-    BUILD_NAME: process.env.BuildName
     
   
     updateJob: false,
@@ -15,7 +14,7 @@ exports.config = {
         version: 'latest',
         platform: 'WIN10',
         enableNetworkThrottling: true,
-        build: BUILD_NAME
+        build: process.env.BuildName
        
       }],
     services: [
@@ -37,6 +36,6 @@ exports.config = {
         ui: 'bdd'
     }
   
-}
+
   
   }
