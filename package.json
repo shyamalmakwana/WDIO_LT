@@ -7,16 +7,19 @@
     "onprem": "npx wdio run ./wdio.conf.js",
     "parallel": "npx wdio run ./wdio.confparallel.js",
     "single": "npx wdio run ./wdio.confsingle.js",
-    "app": "npx wdio run ./wdio.confApp.js"
+    "app": "npx wdio run ./wdio.confApp.js",
+    "moves": "npx wdio run ./debug.config.js"
   },
   "keywords": [],
   "author": "Mayank M",
   "license": "ISC",
   "dependencies": {
+    "@babel/register": "^7.22.15",
     "@wdio/cli": "^7.16.14",
-    "wdio-lambdatest-service": "^1.0.8"
+    "wdio-lambdatest-service": "^2.1.1"
   },
   "devDependencies": {
+    "@axe-core/webdriverio": "4.7.2",
     "@wdio/local-runner": "^7.16.14",
     "@wdio/mocha-framework": "^7.16.14",
     "@wdio/selenium-standalone-service": "^7.20.8",

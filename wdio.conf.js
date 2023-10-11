@@ -1,3 +1,4 @@
+const AxeWebdriverIO = require('@axe-core/webdriverio').default;
 exports.config = {
     // user: process.env.LT_USERNAME,
     // key: process.env.LT_ACCESS_KEY,
@@ -305,4 +306,25 @@ exports.config = {
     // */
     // //onReload: function(oldSessionId, newSessionId) {
     // //}
+    
+
+before: function (capabilities, specs, browser) {
+        const axeWdio = new AxeWebdriverIO({
+            client: browser
+        })
+ 
+        // Configure Command to run axe
+        browser.addCommand('getAxeResults', async () => {
+            return axeWdio.analyze()
+            .then(async (result) => {
+              
+             
+                return result
+            })
+            .catch(err => {
+                console.log(err)
+            })
+        })
+ 
+    },
 }
