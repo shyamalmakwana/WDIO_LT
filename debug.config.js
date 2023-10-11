@@ -7,7 +7,7 @@ exports.config = {
     },
 
     specs: [
-        'C:/Users/makwa/OneDrive/Desktop/Work/Demos/WebdriverIO_LT/test/specs/Test.js'
+        './test/specs/Test.js'
     ],
 
     maxInstances: 1,
