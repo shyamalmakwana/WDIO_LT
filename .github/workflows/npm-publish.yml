@@ -12,8 +12,8 @@ jobs:
   build:
 
     env: 
-        LT_USERNAME: shyamalm
-        LT_ACCESS_KEY: kot3dIbMaNf3h9T50ZjGjPIGA8iuRyCeYw27Norr5uRbzGq9qm 
+        LT_USERNAME: abc
+        LT_ACCESS_KEY:  as
         BUILD_NAME: LT_Build
         
     runs-on: ubuntu-latest
