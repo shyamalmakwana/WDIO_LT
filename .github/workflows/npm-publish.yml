@@ -4,8 +4,8 @@
 name: Node.js Package
 
 on:
-  schedule:
-    - cron: '30 5,17 * * *'
+  # schedule:
+  #   - cron: '30 5,17 * * *'
   workflow_dispatch:
 
 jobs:
